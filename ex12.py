@@ -1,0 +1,8 @@
+# Pydoc allows Python programmers to access Python's documentation help files, generate text and
+# HTML pages with documentation specifics, and find the appropriate module for a particular job.
+
+age = raw_input("How old are you? ")
+height = raw_input("How tall are you? ")
+weight = raw_input("How much do you weigh? ")
+
+print "So, you're %r old, %s tall and %r heavy." % (age, height, weight)
