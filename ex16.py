@@ -1,4 +1,5 @@
-#-*- encoding: UTF-8 -*-#
+# -*- encoding: UTF-8 -*-#
+
 """
 close — Closes the file. Like File->Save.. in your editor.
 read—Reads the contents of the fi le. You can assign the result to a variable.
@@ -16,10 +17,14 @@ print "If you do want that, hit RETURN."
 raw_input("?")
 print "Opening the file..."
 target = open(filename, 'w')
+# target = open(filename)
+
+print "printing the current content of the file:"
+print target.read()
 
 print "Truncating the file. Goodbye!",
-
 target.truncate()
+
 print "Now I'm going to ask you for three to four lines ."
 line1 = raw_input("line 1:> ")
 line2 = raw_input("line 2:? ")
